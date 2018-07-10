@@ -1,0 +1,161 @@
+
+
+/*CUSTOM CSS*/
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #5a6175;
+	background: url(background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+	font-size: 2.074em;
+	/*margin-bottom: 0;*/
+}
+
+h2 { font-size: 1.728em; }
+h3 { font-size: 1.44em; }
+h4 { font-size: 1.2em; }
+small { font-size: 0.833em; }
+
+.line-space {
+  line-height: 1.7;
+}
+
+input[type=text] {
+  padding: .5em 2em;
+  width: 25em;
+  margin: 1em 1em 3em;
+  border-top: none;
+  border-right: none;
+  border-left:none;
+  border-bottom: solid 1px #979797;
+}
+
+body {
+    margin-top: 3%;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #54c2bb;
+  padding: 1rem 3rem;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  font-size: 1.025em;
+  border:none;
+  text-transform: uppercase;
+}
+
+#control {
+	height: 30%;
+	width: 30%;
+	padding: none;
+}
+
+.white-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-top: 2%;
+  padding: 1% 4% 3%;
+}
+
+
+
+/*RESPONSIVE SCREENS*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
+
+  h1 {
+    font-size: 1.75em;
+  }
+
+  body {
+      margin-top: 10%;
+      margin-right: 10%;
+      margin-left: 10%;
+  }
+
+  .white-bg {
+    border-radius: 5px;
+    margin-top: 2%;
+    padding: 5% 10% 6%;
+  }
+
+  #control {
+    width: 70%;
+    padding: none;
+  }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) { 
+  body {
+      margin-top: 15%;
+      margin-right: 10%;
+      margin-left: 10%;
+  }
+
+  #control {
+    width: 50%;
+    padding: none;
+  } 
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) { ... }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+  body {
+      margin-top: 5%;
+      margin-right: 30%;
+      margin-left: 30%;
+  }
+
+}
+
+/*Collapsible*/
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

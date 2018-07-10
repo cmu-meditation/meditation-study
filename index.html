@@ -1,0 +1,42 @@
+<html>
+<head>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Meditation Demo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class = "container">
+        <h1>Carnegie Mellon<br/>Meditation Study</h1>
+
+        <p class="line-space"><b>Thank you for agreeing to participate in our study! We are a group of CMU students from the School of Computer Science working on a study to try to understand what effects sound has during meditation.</b></p>
+        <div class = "white-bg">
+            <p>Please enter the code you were provided via email to begin.</p><input id="password" type="text"/>
+            <!-- TO DO: change link depending on code entered -->
+            <a onclick="javascript:return validatePass()"><button>START STUDY</button></a>
+        </div>
+        <script>
+        function validatePass(){
+            if(document.getElementById("password").value == 'meditate74'){ //soundfirst
+                window.location.href = "session1-s.html";
+                return true;
+            } else if(document.getElementById("password").value == 'relax90'){ //no sound first
+                window.location.href = "session1-ns.html";
+                return true;
+            } else if(document.getElementById("password").value == 'peaceful27'){ // sound second
+                window.location.href = "session2-s.html";
+                return true;
+            } else if(document.getElementById("password").value == 'calm15'){ //no sound second
+                window.location.href = "session2-ns.html";
+                return true;
+            } else {
+                alert('Incorrect Code. Please try again.');
+                return false;
+            }
+        }
+        </script>
+    </div>
+</body>
+</html>

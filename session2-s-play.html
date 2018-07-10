@@ -1,0 +1,63 @@
+<html>
+<head>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Meditation Demo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class = "container white-bg">
+        <h1>Session 2</h1>
+
+        <audio id= "audio">
+            <!-- CHANGE HERE FOR SESSIONS -->
+          <source src="sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        <br>
+            <img onclick="toggleAudio()" id="control" src="play.svg">
+        <br><br>
+        <a href="https://goo.gl/forms/foVfipczlpLrgRp32" onclick="javascript:return checkAudio()"><button>Review Experience</button></a>
+    </div>
+
+    <script>
+        var audio = document.getElementById("audio");
+        var control = document.getElementById("control");
+
+        var isPlaying = false;
+
+        function checkAudio() {
+            if(audio.ended === false){
+                alert("Audio not finished playing.");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function checkTime() {
+            var time = audio.played.end(0);
+
+            if (!time) {
+                alert("Time Elapsed: 0");
+            } else {
+                alert("Time Elapsed: " + time + " seconds");
+            }
+        }
+
+        function toggleAudio() {
+            if (isPlaying == false) {
+                isPlaying = true;
+                control.src = "pause.svg";
+                audio.play();
+            } else {
+                isPlaying = false;
+                control.src = "play.svg";
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Meditation Demo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class = "container">
+        <p>The guided meditation sessions will last for a duration of 10 minutes each. At the end of the session you will be given a set of questions which you can either type the answers for or record your answers and send them to us. These questions should take you no long than 20 minutes to answer.
+<br><br>
+Please make sure you answer the questions immediately at the end of the session so that we can get your best perspective about the session. Thank you for your help!
+</p>
+
+        <audio id= "audio" controls>
+          <source src="no-sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        <br><br>
+        <a href="https://goo.gl/forms/foVfipczlpLrgRp32" onclick="javascript:return checkAudio()"><button>Review Experience</button></a>
+    </div>
+
+    <script>
+        var audio = document.getElementById("audio");
+
+        function checkAudio() {
+            if(audio.ended === false){
+                alert("Audio not finished playing.");
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

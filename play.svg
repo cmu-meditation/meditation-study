@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="214px" height="214px" viewBox="0 0 214 214" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="session-audio" transform="translate(-613.000000, -276.000000)">
+            <g id="play" transform="translate(613.000000, 276.000000)">
+                <circle id="Oval-4" fill="#F58A44" cx="107" cy="107" r="107"></circle>
+                <path d="M124.461463,74.3179503 L158.828158,142.242712 C160.074824,144.70671 159.087981,147.714797 156.623983,148.961463 C155.924201,149.315519 155.150947,149.5 154.366695,149.5 L85.633305,149.5 C82.8718813,149.5 80.633305,147.261424 80.633305,144.5 C80.633305,143.715748 80.8177858,142.942494 81.171842,142.242712 L115.538537,74.3179503 C116.785203,71.8539524 119.79329,70.8671095 122.257288,72.1137752 C123.208119,72.5948507 123.980387,73.3671188 124.461463,74.3179503 Z" id="Triangle-2" fill="#FFFFFF" transform="translate(120.000000, 107.500000) rotate(90.000000) translate(-120.000000, -107.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
