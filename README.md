@@ -1,4 +1,4 @@
-# meditation-demo
+# meditation-study
 
 We are a group of researchers from Carnegie Mellon University studying the effects of meditation. We are looking for study participants available from Monday July 9 - Friday July 13, 2018. The study will be conducted remotely on your own time, at any location.
 
